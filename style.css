@@ -1,3 +1,15 @@
+@media (max-width: 767px)
+{
+    .diamond-grid
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@font-face {
+    font-family: 'squidgame';
+    src: url("fonts/GameOfSquids-1GMVL.ttf");
+}
 body
 {
     margin: 0%;
@@ -8,6 +20,7 @@ body
 {
     width: 70%;
     margin: 150px auto 0;
+    padding-left: 5%;
 }
 .item
 {
@@ -29,11 +42,11 @@ body
     width: 100%;
     transform: translateY(-50%) scale(1.5);
 }
-@media (max-width: 767px)
-{
-    .diamond-grid
-    {
-        width: 100%;
-        margin: 0 auto;
-    }
+.title {
+    font-family: 'squidgame';
+    color: #fff;
+    text-align: center;
+}
+.filter {
+    filter: grayscale(100%);
 }

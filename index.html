@@ -7,17 +7,22 @@
         <link rel="stylesheet" type="text/css" href="diamonds.css">
     </head>
     <body>
+        <h1 class="title">Squid Game (Friends-Giving Edition)</h1>
         <div class="diamond-grid">
-            <div class="item"><img src="assets/calvin.png" alt=""></div>
-            <div class="item"><img src="" alt=""></div>
-            <div class="item"><img src="" alt=""></div>
-            <div class="item"><img src="" alt=""></div>
-            <div class="item"><img src="" alt=""></div>
-            <div class="item"><img src="" alt=""></div>
-            <div class="item"><img src="" alt=""></div>
-            <div class="item"><img src="" alt=""></div>
-            <div class="item"><img src="" alt=""></div>
-            <div class="item"><img src="" alt=""></div>
+            <div class="item"><img class="calvin" src="assets/calvin.png" alt=""></div>
+            <div class="item"><img class="aaron" src="assets/aaron.png" alt=""></div>
+            <div class="item"><img class="gurtej" src="assets/gurtej.png" alt=""></div>
+            <div class="item"><img class="kai" src="assets/kai.png" alt=""></div>
+            <div class="item"><img class="kevin" src="assets/kevin.png" alt=""></div>
+            <div class="item"><img class="tammy" src="assets/tammy.png" alt=""></div>
+            <div class="item"><img class="yassir" src="assets/yassir.png" alt=""></div>
+            <div class="item"><img class="img" src="" alt=""></div>
+            <div class="item"><img class="img" src="" alt=""></div>
+            <div class="item"><img class="img" src="" alt=""></div>
+            <div class="item"><img class="img" src="" alt=""></div>
+            <div class="item"><img class="img" src="" alt=""></div>
+            <div class="item"><img class="img" src="" alt=""></div>
+            <div class="item"><img class="img" src="" alt=""></div>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="jquery.diamonds.js"></script>
@@ -28,6 +33,29 @@
                 hideIncompleteRow :false,// Hide last row if there are not enough items to fill it completely.
                 autoRedraw :true,// Auto redraw diamonds when it detects resizing.
                 itemSelector :".item" // the css selector to use to select diamonds-items.
+            });
+            $(document).ready(function() {
+                $('.calvin').click(function() {
+                    $(".calvin").toggleClass("filter");
+                })
+                $('.aaron').click(function() {
+                    $(".aaron").toggleClass("filter");
+                })
+                $('.gurtej').click(function() {
+                    $(".gurtej").toggleClass("filter");
+                })
+                $('.kai').click(function() {
+                    $(".kai").toggleClass("filter");
+                })
+                $('.kevin').click(function() {
+                    $(".kevin").toggleClass("filter");
+                })
+                $('.tammy').click(function() {
+                    $(".tammy").toggleClass("filter");
+                })
+                $('.yassir').click(function() {
+                    $(".yassir").toggleClass("filter");
+                })
             });
         </script> 
     </body>
